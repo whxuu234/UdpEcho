@@ -1,0 +1,22 @@
+{
+    "name": "Debian: UDP Test",
+    "dockerFile": "Dockerfile",
+  
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+  
+    "extensions": [
+      "ms-vscode.cpptools"
+    ],
+    "mounts": [
+      {
+        "source": "${localEnv:HOME}/Documents/Git-repo/UdpEcho",
+        "target": "/source",
+        "type": "bind",
+        "consistency": "cached"
+      }
+    ]
+  
+}
+  
